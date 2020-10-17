@@ -1,0 +1,351 @@
+@import url(../CSS/fonts.css);
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Adaptar fundo.jpg para somente header e site title!
+   Necessário recortar imagem primeiro!*/
+
+:root{
+    
+    /* theme colors */
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --tamy: #7ed957;
+    --blue-light: #2575fc;
+    --blue-dark: #6a11cb;
+
+    /* theme gradient colors */
+    --deep: linear-gradient(to right,var(--blue-light) 0%,var(--blue-dark) 100%);
+
+    /* theme font-family */
+    --lev_Nuni:"lev_Nuni",cursive;
+    --reg_Nuni:"reg_Nuni",cursive;
+    --bold_Nuni:"bold_Nuni",cursive;
+    --lev_Mont:"lev_Mont",cursive;
+    --reg_Mont:"reg_Mont",cursive;
+    --bold_Mont:"bold_Mont",cursive;
+}
+
+/*-- x--Global Classes--x --*/
+
+a{
+    text-decoration: none; 
+    color: var(--white);
+}
+
+.flex-row{
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+ul{list-style-type: none;}
+
+i{padding: 0 .2rem;}
+
+h1{
+    font-family:var(--bold_Nuni);
+    font-size: 3.5rem;
+    color: var(--white);
+}
+
+h2{color:var(--white);}
+
+h3{
+    font-family:var(--bold_Mont);
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+h4{color:var(--white);}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--reg_Mont);
+    cursor: pointer;
+    color:var(--white);
+}
+
+.container{margin: 0 5vw;}
+/*-- x--Global Classes--x --*/
+
+
+/*-- x--Navbar--x --*/
+.background-top{
+    background: url('../Assets/Img/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav{
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 11vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{justify-content: space-between;}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 85%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+.collapse{
+    height: 31rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--reg_Mont);
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link a:hover{color: var(--blue-light);}
+
+.nav .nav-brand a img{
+    width: 85px;
+    height: 85px;
+    /*
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--bold_Nuni);
+    font-size: 1.6rem;
+    */
+}
+
+.nav .social{padding: 1.4rem 0;}
+
+.nav .social i:hover{color:var(--blue-dark);}
+
+/*-- x--Navbar--x --*/
+
+
+/*-- x--Main Content--x --*/
+
+/*-- x--Site Title--x --*/
+
+main .site-title{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+}
+
+main .site-title h1,h3{margin: .3rem;}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--deep);
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/*-- x--Site Title--x  --*/
+
+
+/*-- ---Carousel--- --*/
+
+/*
+main .blog{
+  Para adicionar background no meio do site!
+  (necessario recortar o background 1 e colocá-lo
+  somente no header e site title!)  
+  background: url('');
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+  background-size: 65%;
+}*/
+
+main .blog .blog-post{padding-top: 6rem;}
+
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+    margin: 3rem 3rem;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+
+main .blog-content .blog-title{padding: 2rem 0;}
+
+main .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background: var(--deep);
+    margin: .5rem;
+}
+
+main .blog-content .btn-blog:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+main .blog-content span{
+    display: block;
+    font-family:var(--lev_Mont);
+    color:var(--white);
+}
+
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav button.owl-prev .owl-nav-prev,
+.owl-nav button.owl-next .owl-nav-next{
+    color:var(--white);
+    background:transparent;
+    font-size: 2rem;
+}
+
+/* Fix outline bug
+.owl-nav button.owl-prev .owl-nav-prev:hover{
+    background:transparent;
+    color:var(--blue-light);
+}
+ 
+.owl-nav button.owl-prev .owl-nav-prev,
+.owl-nav button.owl-next .owl-nav-next{outline: none;}
+
+.owl-theme.owl-nav[class*='owl-']{outline:none;}
+
+.owl-nav button.owl-next .owl-nav-next:hover{
+    background:transparent;
+    color:var(--blue-light);
+}
+*/
+
+/*-- x--Carousel--x --*/
+
+/*-- ---Site Content--- --*/
+
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+main .post-content{
+    width:100%;
+    margin-bottom: 5rem;
+}
+
+main .post-content .post-image .post-info span{color:var(--white);}
+
+
+
+/*-- x--Site Content--x --*/
+
+/*-- x--Main Site--x --*/
+
+
+/*           Viewport less then or equal to 750px           */
+@media only screen and (max-width: 750px){
+    .nav .nav-menu,.nav .nav-items{flex-direction: column;}
+    .nav .toggle-collapse{display: initial;}
+}
+
+/*     x     Viewport less then or equal to 750px     x     */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SearchBar H&# 
+
+.search{padding-right: 5px;}
+
+.searchBar{
+    border: 1px solid;
+    border-radius: 5px 5px 5px 5px;
+    border-color: #ffffff;
+    background-color: #000000;
+    outline: none;
+    color: #ffffff;
+}
+
+
+.searchBar:hover{border-color: #7ed957;}
+
+.searchBar::placeholder{color: #ffffff;}
+
+.clickToSearch{
+    cursor: pointer;
+    border-style: hidden;
+    background-color: #000000;
+}
+
+.clickToSearch i{color: #ffffff;}
+
+.clickToSearch i:hover{color:#7ed957;}
+
+
+/* Body 
+
+body{
+    background-color: #2d2d2d;
+}
+
+
+/* @media 
+
+/* Small Screen 
+@media(max-width: 700px){
+    header{flex-direction: column;}
+}
+*/
