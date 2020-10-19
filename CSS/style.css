@@ -4,10 +4,8 @@ html,body{
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
+    background: gray; /* Provisório */
 }
-
-/* Adaptar fundo.jpg para somente header e site title!
-   Necessário recortar imagem primeiro!*/
 
 :root{
     
@@ -81,11 +79,13 @@ button.btn{
 
 
 /*-- x--Navbar--x --*/
+
+/*
 .background-top{
-    background: url('../Assets/Img/fundo.jpg');
+    background: url('../Assets/Img/decidir qual imagem');
     background-size: cover;
     background-repeat: no-repeat;
-}
+}*/
 
 .nav{
     padding: 0 2rem;
@@ -189,9 +189,11 @@ main .site-title .btn:hover{
 
 /*
 main .blog{
+
   Para adicionar background no meio do site!
   (necessario recortar o background 1 e colocá-lo
   somente no header e site title!)  
+
   background: url('');
   background-repeat: no-repeat;
   background-position: right;
@@ -246,6 +248,7 @@ section .container .owl-nav{
 }
 
 /* Fix outline bug
+
 .owl-nav button.owl-prev .owl-nav-prev:hover{
     background:transparent;
     color:var(--blue-light);
@@ -264,7 +267,7 @@ section .container .owl-nav{
 
 /*-- x--Carousel--x --*/
 
-/*-- ---Site Content--- --*/
+/*-- ---Site Content--- --
 
 main .site-content{
     display: grid;
@@ -278,9 +281,7 @@ main .post-content{
 
 main .post-content .post-image .post-info span{color:var(--white);}
 
-
-
-/*-- x--Site Content--x --*/
+-- x--Site Content--x --*/
 
 /*-- x--Main Site--x --*/
 
