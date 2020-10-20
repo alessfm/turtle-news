@@ -4,7 +4,8 @@ html,body{
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
-    background: gray; /* Provisório */
+    background: url(../Assets/Img/oficialbackg.jpg); /* Provisório */
+    background-size: contain;
 }
 
 :root{
@@ -51,18 +52,25 @@ i{padding: 0 .2rem;}
 h1{
     font-family:var(--bold_Nuni);
     font-size: 3.5rem;
-    color: var(--white);
+    color: var(--blue-dark);
 }
 
-h2{color:var(--white);}
+h2{
+    font-family: var(--bold_Mont);
+    font-size: 1.5rem;
+    color:var(--blue-dark);
+}
 
 h3{
     font-family:var(--bold_Mont);
     font-size: 1.1rem;
-    color: var(--white);
+    color: var(--blue-light);
 }
 
-h4{color:var(--white);}
+h4{
+    font-family: var(--reg_Nuni);
+    color:var(--blue-light);
+}
 
 button.btn{
     border: none;
@@ -75,6 +83,11 @@ button.btn{
 }
 
 .container{margin: 0 5vw;}
+
+p{
+    font-family:var(--lev_Nuni);
+    color:var(--white);
+}
 /*-- x--Global Classes--x --*/
 
 
@@ -267,7 +280,7 @@ section .container .owl-nav{
 
 /*-- x--Carousel--x --*/
 
-/*-- ---Site Content--- --
+/*-- ---Site Content--- --*/
 
 main .site-content{
     display: grid;
@@ -276,12 +289,63 @@ main .site-content{
 
 main .post-content{
     width:100%;
-    margin-bottom: 5rem;
 }
 
-main .post-content .post-image .post-info span{color:var(--white);}
+main .site-content .post-content > .post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
 
--- x--Site Content--x --*/
+main .site-content .post-content > .post-image .post-info{
+    background: var(--blue-light);
+    padding: .5rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    border-radius: 3rem;
+}
+
+main .site-content .post-content > .post-image > div{overflow:hidden;}
+
+main .site-content .post-content > .post-image .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+main .site-content .post-content > .post-image .img:hover{transform: scale(1.3);}
+
+main .site-content .post-content > .post-image .post-info span{
+    margin: .5rem;
+    color:var(--white);
+}
+
+main .site-content .post-content .post-title h2{padding-bottom: .8rem;}
+
+main .site-content .post-content .post-title .post-btn{
+    border-radius: 0;
+    padding: .8rem 1.5rem;
+    background: var(--blue-dark);
+}
+
+main .site-content .pagination{
+    justify-content: center;
+    color:var(--white);
+    margin: 4rem 0;
+}
+
+main .site-content .pagination a{
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: 0 .3rem;
+    font-family: var(--lev_Nuni);
+}
+
+main .site-content .pagination .pages{
+    background: var(--blue-light);
+    color:var(--white)
+}
+
+/*-- x--Site Content--x --*/
 
 /*-- x--Main Site--x --*/
 
