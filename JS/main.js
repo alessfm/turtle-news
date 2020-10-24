@@ -17,4 +17,11 @@ $(document).ready( _ => {
         nav: true,
         navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
     });
+
+    // clicar para ir ao topo
+    $('.move-up span').click( _ => {
+        $('html,body').animate({
+            scrollTop: 0
+        },1000);
+    })
 })
