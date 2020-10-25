@@ -1,10 +1,12 @@
-# Turtle +
- **Gaming News and Projects Website** by [alessfm](https://github.com/11-AleXS)
+# Turtle News
+ **Gaming News Website** by [alessfm](https://github.com/11-AleXS)
  ***
   _This is a personal project to improve and test my HTML5, CSS3 and JavaScript skills_
   
- ## Front-end 75% done
- Website Design on development (check branch new_content by cliking [here](https://github.com/11-AleXS/Turtle_Plus/tree/new_content))
+ ## Front-end 99% done
+ Need to do dark mode :p
+ 
+ Website Design on development (check my page by cliking [here](https://github.com/11-AleXS/Turtle_Plus/tree/new_content))
 
  ## Back-end 0% done
  No branch yet
