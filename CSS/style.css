@@ -497,7 +497,15 @@ footer.footer .move-up span:hover{
 
     main .site-content{grid-template-columns: 100%;}
 
+    .site-content .sidebar{display:none;}
+
     footer.footer .container{grid-template-columns: repeat(1,1fr);}
+
+    footer.footer .move-up{
+        position: absolute;
+        right: 1%;
+        top: 1%;
+    }
 }
 
 /*     x     Viewport less then or equal to 750px     x     */
@@ -507,6 +515,8 @@ footer.footer .move-up span:hover{
 
 @media only screen and (max-width: 520px){
     main .blog{height:125vh}
+
+    main .blog-post .blog-content{margin: 1rem 1.5rem;}
 
     .site-content .post-content > .post-image .post-info{display:none;}
 
