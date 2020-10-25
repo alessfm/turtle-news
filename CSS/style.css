@@ -1,10 +1,11 @@
+/* Fazer modo escuro */
+
 @import url(../CSS/fonts.css);
 
 html,body{
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
-    background: gray; /* Provisório */
 }
 
 :root{
@@ -16,11 +17,14 @@ html,body{
     --white: #ffffff;
     --midnight: #104f55;
     --tamy: #7ed957;
-    --blue-light: #2575fc;
-    --blue-dark: #6a11cb;
+    --yel: #fee140 ;
+    --red: #fa709a;
+    --purp: #6a11cb;
+    --blue: #2575fc;
 
     /* theme gradient colors */
-    --deep: linear-gradient(to right,var(--blue-light) 0%,var(--blue-dark) 100%);
+    --sun: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    --moon: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 
     /* theme font-family */
     --lev_Nuni:"lev_Nuni",cursive;
@@ -31,11 +35,11 @@ html,body{
     --bold_Mont:"bold_Mont",cursive;
 }
 
-/*-- x--Global Classes--x --*/
+/*-- ---Global Classes--- --*/
 
 a{
     text-decoration: none; 
-    color: var(--white);
+    color: var(--text-gray);
 }
 
 .flex-row{
@@ -51,18 +55,25 @@ i{padding: 0 .2rem;}
 h1{
     font-family:var(--bold_Nuni);
     font-size: 3.5rem;
-    color: var(--white);
+    color: var(--red);
 }
 
-h2{color:var(--white);}
+h2{
+    font-family: var(--bold_Mont);
+    font-size: 1.5rem;
+    color:var(--red);
+}
 
 h3{
     font-family:var(--bold_Mont);
     font-size: 1.1rem;
-    color: var(--white);
+    color: var(--yel);
 }
 
-h4{color:var(--white);}
+h4{
+    font-family: var(--bold_Nuni);
+    color:var(--text-gray);
+}
 
 button.btn{
     border: none;
@@ -75,17 +86,15 @@ button.btn{
 }
 
 .container{margin: 0 5vw;}
+
+p{
+    font-family:var(--lev_Nuni);
+    color:var(--bg-color);
+}
 /*-- x--Global Classes--x --*/
 
 
-/*-- x--Navbar--x --*/
-
-/*
-.background-top{
-    background: url('../Assets/Img/decidir qual imagem');
-    background-size: cover;
-    background-repeat: no-repeat;
-}*/
+/*-- ---Navbar--- --*/
 
 .nav{
     padding: 0 2rem;
@@ -113,12 +122,10 @@ button.btn{
 
 .nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
-    color: var(--white);
+    color: var(--text-gray);
 }
 
-.collapse{
-    height: 31rem;
-}
+.collapse{height: 17rem;}
 
 .nav .nav-items{
     display: flex;
@@ -133,47 +140,43 @@ button.btn{
     font-size: 1.1rem;
 }
 
-.nav .nav-items .nav-link a:hover{color: var(--blue-light);}
+.nav .nav-items .nav-link a:hover{color: var(--yel);}
 
-.nav .nav-brand a img{
-    width: 85px;
-    height: 85px;
-    /*
-    font-size: 1.6rem;
-    padding: 1rem 0;
-    display: block;
-    font-family: var(--bold_Nuni);
-    font-size: 1.6rem;
-    */
+.nav .nav-brand img{
+    width: 75px;
+    height: 75px;
 }
 
 .nav .social{padding: 1.4rem 0;}
 
-.nav .social i:hover{color:var(--blue-dark);}
+.nav .social i:hover{color:var(--red);}
 
 /*-- x--Navbar--x --*/
 
 
-/*-- x--Main Content--x --*/
+/*-- ---Main Content--- --*/
 
-/*-- x--Site Title--x --*/
+
+/*-- ---Site Title--- --*/
 
 main .site-title{
-    height: 75vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
+    background: url(../Assets/Img/fundo.png);
+    background-size: cover;
 }
 
 main .site-title .site-background{
-    padding-top: 10rem;
+    padding-top: 13rem;
     text-align: center;
 }
 
-main .site-title h1,h3{margin: .3rem;}
+main .site-title h1,h3{color:var(--bg-color);margin: .3rem;}
 
 main .site-title .btn{
     margin: 1.8rem;
-    background: var(--deep);
+    background: var(--sun);
 }
 
 main .site-title .btn:hover{
@@ -187,20 +190,20 @@ main .site-title .btn:hover{
 
 /*-- ---Carousel--- --*/
 
-/*
 main .blog{
-
+    background: var(--white);
+    /*
   Para adicionar background no meio do site!
-  (necessario recortar o background 1 e colocá-lo
-  somente no header e site title!)  
+  (necessario recortar o background 1 com curvas
+  no fim da imagem para dá estilo de pertencimento)  
 
   background: url('');
   background-repeat: no-repeat;
   background-position: right;
   height: 100vh;
   width: 100%;
-  background-size: 65%;
-}*/
+  background-size: 65%;*/
+}
 
 main .blog .blog-post{padding-top: 6rem;}
 
@@ -217,20 +220,20 @@ main .blog-content .blog-title{padding: 2rem 0;}
 
 main .blog-content .btn-blog{
     padding: .7rem 2rem;
-    background: var(--deep);
+    background: var(--sun);
     margin: .5rem;
 }
 
 main .blog-content .btn-blog:hover{
     background: transparent;
-    border: 1px solid var(--white);
-    color: var(--white);
+    border: 1px solid var(--bg-color);
+    color: var(--yel);
 }
 
 main .blog-content span{
     display: block;
     font-family:var(--lev_Mont);
-    color:var(--white);
+    color:var(--text-gray);
 }
 
 section .container .owl-nav{
@@ -242,12 +245,12 @@ section .container .owl-nav{
 
 .owl-nav button.owl-prev .owl-nav-prev,
 .owl-nav button.owl-next .owl-nav-next{
-    color:var(--white);
+    color:var(--bg-color);
     background:transparent;
     font-size: 2rem;
 }
 
-/* Fix outline bug
+/*                                         Fix outline bug
 
 .owl-nav button.owl-prev .owl-nav-prev:hover{
     background:transparent;
@@ -264,10 +267,10 @@ section .container .owl-nav{
     color:var(--blue-light);
 }
 */
-
 /*-- x--Carousel--x --*/
 
-/*-- ---Site Content--- --
+
+/*-- ---Site Content--- --*/
 
 main .site-content{
     display: grid;
@@ -276,77 +279,245 @@ main .site-content{
 
 main .post-content{
     width:100%;
-    margin-bottom: 5rem;
 }
 
-main .post-content .post-image .post-info span{color:var(--white);}
+main .site-content .post-content > .post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
 
--- x--Site Content--x --*/
+main .site-content .post-content > .post-image .post-info{
+    background: var(--yel);
+    padding: .5rem;
+    position: absolute;
+    bottom: 0%;
+    left: 17vw;
+    border-radius: 3rem;
+}
+
+main .site-content .post-content > .post-image > div{overflow:hidden;}
+
+main .site-content .post-content > .post-image .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+main .site-content .post-content > .post-image .img:hover{transform: scale(1.3);}
+
+main .site-content .post-content > .post-image .post-info span{
+    margin: .5rem;
+    color:var(--white);
+}
+
+main .site-content .post-content .post-title h2{padding-bottom: .8rem;}
+
+main .site-content .post-content .post-title .post-btn{
+    border-radius: 0;
+    padding: .8rem 1.5rem;
+    background: var(--red);
+}
+
+main .site-content .pagination{
+    justify-content: center;
+    color:var(--bg-color);
+    margin: 4rem 0;
+}
+
+main .site-content .pagination a{
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: 0 .3rem;
+    font-family: var(--lev_Nuni);
+}
+
+main .site-content .pagination .pages{
+    background: var(--text-gray);
+    color:var(--white)
+}
+
+/*-- x--Site Content--x --*/
+
+
+/*-- ---Sidebar--- --*/
+
+.site-content > .sidebar .category-list{font-family: var(--reg_Mont);}
+
+.site-content > .sidebar .category-list .list-items{
+    background:var(--sun);
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-content > .sidebar .category-list .list-items a{color:var(--white);}
+
+.site-content > .sidebar .category-list .list-items span{color:var(--white);}
+
+.site-content .sidebar .popular-post .post-content{padding: 1rem 0;}
+
+.site-content .sidebar .popular-post h2{padding-top: 8rem;}
+
+.site-content .sidebar .popular-post .post-info{
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: var(--white) !important;
+}
+
+.site-content .sidebar .popular-post .post-info span{
+    font-size: .9rem !important;
+    color: var(--bg-color) !important;}
+
+.site-content .sidebar .newsletter{padding-top: 3rem;}
+
+.site-content .sidebar .newsletter .form-element{padding: .5rem 2rem;}
+
+.site-content .sidebar .newsletter .input-element{
+    width: 88%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+    font-family: var(--reg_Nuni);
+    font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter .form-btn{
+    border-radius: 0rem;
+    padding: .8rem 32%;
+    margin: 1rem 0;
+    background: var(--sun);
+}
+
+/*-- x--Sidebar--x --*/
+
 
 /*-- x--Main Site--x --*/
+
+
+/*-- ---Footer--- --*/
+
+footer.footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color: var(--white);
+    padding-top: .6rem;
+}
+
+footer.footer .container p{
+    color: var(--text-gray);
+    padding-top: .6rem;
+}
+
+footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: var(--white);
+    font-family: var(--lev_Nuni);
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: var(--sun);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .follow .social i{color:var(--white);}
+
+footer.footer .rights{
+    justify-content: center;
+}
+
+footer.footer .rights h4 a{color: var(--white);}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{color:var(--yel);}
+
+footer.footer .move-up span:hover{
+    cursor:pointer;
+    color: var(--white);
+}
+
+/*-- x--Footer--x --*/
+
+
+/*           Viewport less then or equal to 1130px           */
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{display: none !important;}
+
+    footer.footer .container{grid-template-columns: repeat(2,1fr);}
+}
+
+/*     x      Viewport less then or equal to 1130px     x      */
 
 
 /*           Viewport less then or equal to 750px           */
 @media only screen and (max-width: 750px){
     .nav .nav-menu,.nav .nav-items{flex-direction: column;}
+
     .nav .toggle-collapse{display: initial;}
+
+    main .blog-post .blog-content{width: 80%;}
+
+    main .site-content{grid-template-columns: 100%;}
+
+    footer.footer .container{grid-template-columns: repeat(1,1fr);}
 }
 
 /*     x     Viewport less then or equal to 750px     x     */
 
 
+/*           Viewport less then or equal to 520px           */
 
+@media only screen and (max-width: 520px){
+    main .blog{height:125vh}
 
+    .site-content .post-content > .post-image .post-info{display:none;}
 
-
-
-
-
-
-
-
-
-
-/* SearchBar H&# 
-
-.search{padding-right: 5px;}
-
-.searchBar{
-    border: 1px solid;
-    border-radius: 5px 5px 5px 5px;
-    border-color: #ffffff;
-    background-color: #000000;
-    outline: none;
-    color: #ffffff;
+    footer.footer .container > div{padding: 1rem .9rem !important;}
+    
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+    
+    nav .toggle-collapse{width: 80%;}
 }
 
-
-.searchBar:hover{border-color: #7ed957;}
-
-.searchBar::placeholder{color: #ffffff;}
-
-.clickToSearch{
-    cursor: pointer;
-    border-style: hidden;
-    background-color: #000000;
-}
-
-.clickToSearch i{color: #ffffff;}
-
-.clickToSearch i:hover{color:#7ed957;}
-
-
-/* Body 
-
-body{
-    background-color: #2d2d2d;
-}
-
-
-/* @media 
-
-/* Small Screen 
-@media(max-width: 700px){
-    header{flex-direction: column;}
-}
-*/
+/*     x      Viewport less then or equal to 520px    x       */
