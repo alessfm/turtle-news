@@ -491,6 +491,8 @@ footer.footer .move-up span:hover{
 @media only screen and (max-width: 750px){
     .nav .nav-menu,.nav .nav-items{flex-direction: column;}
 
+    .nav .social i{padding: 0rem 1.5rem;}
+
     .nav .toggle-collapse{display: initial;}
 
     main .blog-post .blog-content{width: 80%;}
@@ -516,7 +518,7 @@ footer.footer .move-up span:hover{
 @media only screen and (max-width: 520px){
     main .blog{height:125vh}
 
-    main .blog-post .blog-content{margin: 1rem 1.5rem;}
+    main .blog-post .blog-content{margin: 1rem 2rem;}
 
     .site-content .post-content > .post-image .post-info{display:none;}
 
