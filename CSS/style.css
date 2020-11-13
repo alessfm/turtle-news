@@ -17,14 +17,14 @@ html,body{
     --white: #ffffff;
     --midnight: #104f55;
     --tamy: #7ed957;
-    --yel: #fee140 ;
-    --red: #fa709a;
-    --purp: #6a11cb;
-    --blue: #2575fc;
+    --dayLight: #00c6fb;
+    --dayDark: #005bea;
+    --nightLight: #2a5298;
+    --nightDark: #1e3c72;
 
     /* theme gradient colors */
-    --sun: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-    --moon: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    --day: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    --night: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
 
     /* theme font-family */
     --lev_Nuni:"lev_Nuni",cursive;
@@ -55,19 +55,19 @@ i{padding: 0 .2rem;}
 h1{
     font-family:var(--bold_Nuni);
     font-size: 3.5rem;
-    color: var(--red);
+    color: var(--dayDark);
 }
 
 h2{
     font-family: var(--bold_Mont);
     font-size: 1.5rem;
-    color:var(--red);
+    color:var(--dayDark);
 }
 
 h3{
     font-family:var(--bold_Mont);
     font-size: 1.1rem;
-    color: var(--yel);
+    color: var(--dayLight);
 }
 
 h4{
@@ -89,7 +89,7 @@ button.btn{
 
 p{
     font-family:var(--lev_Nuni);
-    color:var(--bg-color);
+    color:var(--text-light);
 }
 /*-- x--Global Classes--x --*/
 
@@ -140,7 +140,7 @@ p{
     font-size: 1.1rem;
 }
 
-.nav .nav-items .nav-link a:hover{color: var(--yel);}
+.nav .nav-items .nav-link a:hover{color: var(--dayLight);}
 
 .nav .nav-brand img{
     width: 75px;
@@ -149,7 +149,7 @@ p{
 
 .nav .social{padding: 1.4rem 0;}
 
-.nav .social i:hover{color:var(--red);}
+.nav .social i:hover{color:var(--dayDark);}
 
 /*-- x--Navbar--x --*/
 
@@ -163,7 +163,7 @@ main .site-title{
     height: 110vh;
     display: flex;
     justify-content: center;
-    background: url(../Assets/Img/fundo.png);
+    background: url(../Assets/Img/fundo.JPG);
     background-size: cover;
 }
 
@@ -172,11 +172,13 @@ main .site-title .site-background{
     text-align: center;
 }
 
-main .site-title h1,h3{color:var(--bg-color);margin: .3rem;}
+main .site-title h1{color:var(--dayLight);margin: .3rem;}
+
+main .site-title h3{color:var(--dayDark);margin: .3rem;}
 
 main .site-title .btn{
     margin: 1.8rem;
-    background: var(--sun);
+    background: var(--day);
 }
 
 main .site-title .btn:hover{
@@ -220,14 +222,14 @@ main .blog-content .blog-title{padding: 2rem 0;}
 
 main .blog-content .btn-blog{
     padding: .7rem 2rem;
-    background: var(--sun);
+    background: var(--day);
     margin: .5rem;
 }
 
 main .blog-content .btn-blog:hover{
     background: transparent;
     border: 1px solid var(--bg-color);
-    color: var(--yel);
+    color: var(--dayLight);
 }
 
 main .blog-content span{
@@ -277,9 +279,7 @@ main .site-content{
     grid-template-columns: 70% 30%;
 }
 
-main .post-content{
-    width:100%;
-}
+main .post-content{width:100%;}
 
 main .site-content .post-content > .post-image, .post-title{
     padding: 1rem 2rem;
@@ -287,7 +287,7 @@ main .site-content .post-content > .post-image, .post-title{
 }
 
 main .site-content .post-content > .post-image .post-info{
-    background: var(--yel);
+    background: var(--dayLight);
     padding: .5rem;
     position: absolute;
     bottom: 0%;
@@ -314,7 +314,7 @@ main .site-content .post-content .post-title h2{padding-bottom: .8rem;}
 main .site-content .post-content .post-title .post-btn{
     border-radius: 0;
     padding: .8rem 1.5rem;
-    background: var(--red);
+    background: var(--dayDark);
 }
 
 main .site-content .pagination{
@@ -343,7 +343,7 @@ main .site-content .pagination .pages{
 .site-content > .sidebar .category-list{font-family: var(--reg_Mont);}
 
 .site-content > .sidebar .category-list .list-items{
-    background:var(--sun);
+    background:var(--day);
     padding: .4rem 1rem;
     margin: .8rem 0;
     border-radius: 3rem;
@@ -388,7 +388,7 @@ main .site-content .pagination .pages{
     border-radius: 0rem;
     padding: .8rem 32%;
     margin: 1rem 0;
-    background: var(--sun);
+    background: var(--day);
 }
 
 /*-- x--Sidebar--x --*/
@@ -438,11 +438,11 @@ footer.footer .newsletter .form-element input{
     color: var(--white);
     font-family: var(--lev_Nuni);
     font-size: 1rem;
-    width: 74%;
+    width: 73%;
 }
 
 footer.footer .newsletter .form-element span{
-    background: var(--sun);
+    background: var(--day);
     padding: .5rem .7rem;
     cursor: pointer;
 }
@@ -461,7 +461,7 @@ footer.footer .move-up{
     top: 50%;
 }
 
-footer.footer .move-up span{color:var(--yel);}
+footer.footer .move-up span{color:var(--dayLight);}
 
 footer.footer .move-up span:hover{
     cursor:pointer;
