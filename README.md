@@ -1,7 +1,7 @@
 # 🐢 Turtle News
 [**Gaming News Website**](https://11-alexs.github.io/Turtle_News/) by [alessfm](https://github.com/11-AleXS)
 
-###### ⚠️ Project interrupted indefinitely, do not wait for updates frequently. For more information on why this is happening, please check the [READ.me](https://github.com/11-AleXS/11-AleXS/blob/main/README.md) file in the 11-AleXS / 11-AleXS repository or the [main tab of my profile](https://github.com/11-AleXS).
+###### ⚠️ Project interrupted indefinitely, do not wait for updates frequently. For more information on why this is happening, please check the [README.md](https://github.com/11-AleXS/11-AleXS/blob/main/README.md) file in the 11-AleXS / 11-AleXS repository or the [main tab of my profile](https://github.com/11-AleXS).
 
 ###### The [GitHub Webpage](https://11-alexs.github.io/Turtle_News/) will still work and may be updated with news, but the source code itself will not change.
 ***
