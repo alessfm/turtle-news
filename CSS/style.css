@@ -111,7 +111,7 @@ p{
     top: 0%;
     width: 85%;
     cursor: pointer;
-    display: none;
+    display: none; 
 }
 
 .nav .toggle-collapse .toggle-icons{
