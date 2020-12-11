@@ -112,7 +112,7 @@ p{
     width: 85%;
     cursor: pointer;
     display: none; 
-}
+} 
 
 .nav .toggle-collapse .toggle-icons{
     display: flex;
