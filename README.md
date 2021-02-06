@@ -7,9 +7,6 @@
 
 _This is a personal project to improve and test my HTML5, CSS3 and JavaScript skills and will be important for My Dream Game to inform updates_
 *** 
-### 🌳 Branches
-- [Design](https://github.com/alessfm/Turtle_Plus/tree/new_content)
-- [Server-side] No branch yet
  
 ### ⚙️ Build
 - Main idea ✔️
