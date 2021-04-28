@@ -1,6 +1,4 @@
-/* Fazer modo escuro */
-
-@import url(../CSS/fonts.css);
+@import url(./fonts.css);
 
 html,body{
     margin: 0%;
@@ -160,11 +158,11 @@ p{
 /*-- ---Site Title--- --*/
 
 main .site-title{
-    height: 110vh;
+    height: 80.5vh;
     display: flex;
     justify-content: center;
-    background: url(../Assets/Img/fundo.JPG);
-    background-size: cover;
+    background: url(../img/leap.png);
+    background-size: contain;
 }
 
 main .site-title .site-background{
@@ -194,17 +192,6 @@ main .site-title .btn:hover{
 
 main .blog{
     background: var(--white);
-    /*
-  Para adicionar background no meio do site!
-  (necessario recortar o background 1 com curvas
-  no fim da imagem para dá estilo de pertencimento)  
-
-  background: url('');
-  background-repeat: no-repeat;
-  background-position: right;
-  height: 100vh;
-  width: 100%;
-  background-size: 65%;*/
 }
 
 main .blog .blog-post{padding-top: 6rem;}
@@ -252,23 +239,6 @@ section .container .owl-nav{
     font-size: 2rem;
 }
 
-/*                                         Fix outline bug
-
-.owl-nav button.owl-prev .owl-nav-prev:hover{
-    background:transparent;
-    color:var(--blue-light);
-}
- 
-.owl-nav button.owl-prev .owl-nav-prev,
-.owl-nav button.owl-next .owl-nav-next{outline: none;}
-
-.owl-theme.owl-nav[class*='owl-']{outline:none;}
-
-.owl-nav button.owl-next .owl-nav-next:hover{
-    background:transparent;
-    color:var(--blue-light);
-}
-*/
 /*-- x--Carousel--x --*/
 
 

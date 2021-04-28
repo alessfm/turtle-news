@@ -3,5 +3,7 @@
 
 ###### ⚠️ Project archived.
 
-_Doesn't work very well on mobile when the smartphone rotates to horizontal, because I'm not that good on front-end, but at least it was a fun ride :p_
+_Doesn't work very well on mobile when the smartphone rotates to horizontal, because I'm not that good on front-end, but at least it was a fun ride :p. By the way,_ 
+```let backEnd = null;``` 
+_in this project;_
 *** 
