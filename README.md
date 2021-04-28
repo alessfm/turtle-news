@@ -1,5 +1,5 @@
 # 🐢 Turtle News
-[**Gaming News Website**](https://alessfm.github.io/turtle_news/)
+[**Gaming News Website**](https://alessfm.github.io/turtle-news/)
 
 ##### ⚠️ Project archived.
 
