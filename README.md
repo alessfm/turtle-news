@@ -1,21 +1,7 @@
 # 🐢 Turtle News
-[**Gaming News Website**](https://alessfm.github.io/Turtle_News/)
+[**Gaming News Website**](https://alessfm.github.io/turtle_news/)
 
-###### ⚠️ Project interrupted indefinitely, do not wait for updates frequently.
+###### ⚠️ Project archived.
 
-###### The [GitHub Webpage](https://alessfm.github.io/Turtle_News/) will still work.
-
-_This is a personal project to improve and test my HTML5, CSS3 and JavaScript skills and will be important for My Dream Game to inform updates_
+_Doesn't work very well on mobile when the smartphone rotates to horizontal, because I'm not that good on front-end, but at least it was a fun ride :p_
 *** 
- 
-### ⚙️ Build
-- Main idea ✔️
-- Front-end **80%** done
-- Back-end ❌
-
-#### 🗒️ To Do List
-- Dark Mode
-
-#### 🦗 Bugs
-- NavBar Div on mobile is too big
-- Website on mobile on horizontal is messy
