@@ -1,10 +1,18 @@
-# 🐢 Turtle News
-[**Gaming News Website**](https://alessfm.github.io/turtle-news/)
+<div align="center">
+  
+  <img src="./assets/img/logorec.png"></img>
 
-##### ⚠️ Project archived.
+  <img src="https://img.shields.io/github/license/alessfm/turtle-news"></img>
 
-Doesn't work very well on mobile when the smartphone rotates to horizontal, because I'm not that good on front-end, _but at least it was a fun ride_ :p. By the way, 
-<br/>
-```let backEnd = null;``` 
-<br/>
-in this project.
+  <p><code>Turtle News</code> is a gaming news website template.<p>
+  
+  Live [here](https://alessfm.github.io/turtle-news/)
+  
+  <p>🚧 This project is archived.<p>
+</div>
+
+**📘 License**
+---
+
+License **MIT** - [Alessandro Figueiredo Malheiro](https://github.com/alessfm/). Please, look **[LICENSE](LICENSE)** for more details.
+<br><br>
