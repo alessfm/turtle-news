@@ -13,7 +13,6 @@ $(document).ready( _ => {
     $('html,body').toggleClass('dark-mode');
     $('.blog').toggleClass('dark-mode');
     $('.owl-carousel').toggleClass('dark-mode');
-    $('i').toggleClass('dark-color');
     $('a').toggleClass('dark-color');
   });
 
