@@ -10,7 +10,7 @@ html,body{
 
   /* theme colors */
   --text-gray:#3f4954;
-  --text-light:#686666da;
+  --text-light:#F1F1F1;
   --bg-color: #0f0f0f;
   --dark-color: #0a0a0a;
   --white: #ffffff;
@@ -89,6 +89,17 @@ button.btn{
 p{
   font-family:var(--lev_Nuni);
   color:var(--text-light);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--text-light);
+}
+::-webkit-scrollbar {
+  width: 15px;
+  background: var(--white);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--day);
 }
 
 /*-- x--Global Classes--x --*/
