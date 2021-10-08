@@ -8,6 +8,15 @@ const responsive = {
 // Uso de JQuery
 $(document).ready( _ => {
 
+  // Dark and Light mode
+  $('.switch').click( _ => {
+    $('html,body').toggleClass('dark-mode');
+    $('.blog').toggleClass('dark-mode');
+    $('.owl-carousel').toggleClass('dark-mode');
+    $('i').toggleClass('dark-color');
+    $('a').toggleClass('dark-color');
+  });
+
   $nav = $('.nav');
   $toggleCollapse = $('.toggle-collapse');
 
