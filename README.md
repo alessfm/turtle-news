@@ -1,9 +1,3 @@
-> ⚠️ **Turtle News is over for now.**
-> 
-> Time right now is a bit complicated. Gonna wait for the future...
-
-----
-
 <div align="center">
   <img src="./assets/img/logo.png"></img>
 
