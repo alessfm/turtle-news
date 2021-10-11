@@ -10,7 +10,8 @@ html,body{
 
   /* theme colors */
   --text-gray:#3f4954;
-  --text-light:#F1F1F1;
+  --text-light:#686666da;
+  --light:#F1F1F1;
   --bg-color: #0f0f0f;
   --dark-color: #0a0a0a;
   --white: #ffffff;
@@ -92,7 +93,7 @@ p{
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--text-light);
+  background-color: var(--light);
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -251,7 +252,7 @@ section .container .owl-nav{
 .owl-nav button.owl-prev .owl-nav-prev,
 .owl-nav button.owl-next .owl-nav-next{
   color:var(--bg-color);
-  background:transparent;
+  background: transparent;
   font-size: 2rem;
 }
 
@@ -295,13 +296,17 @@ main .site-content .post-content > .post-image .post-info span{
   color:var(--white);
 }
 
-main .site-content .post-content .post-title h2{padding-bottom: .8rem;}
+main .site-content .post-content .post-title h2{padding-bottom: .8rem; cursor: pointer;}
 
 main .site-content .post-content .post-title .post-btn{
   border-radius: 1;
   margin-top: 0.3rem;
   padding: .8rem 1.5rem;
   background: var(--dayDark);
+}
+
+main .site-content .post-content .post-title .post-btn:hover{
+  background: var(--day);
 }
 
 main .site-content .pagination{
@@ -315,6 +320,10 @@ main .site-content .pagination a{
   border-radius: 2rem;
   margin: 0 .3rem;
   font-family: var(--lev_Nuni);
+}
+
+main .site-content .pagination a:hover{
+  background: var(--dayDark);
 }
 
 main .site-content .pagination .pages{
@@ -336,6 +345,11 @@ main .site-content .pagination .pages{
   width: 70%;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+}
+
+.site-content > .sidebar .category-list .list-items:hover{
+  background: var(--dayDark);
 }
 
 .site-content > .sidebar .category-list .list-items a{color:var(--white);}
@@ -430,6 +444,11 @@ footer.footer .newsletter .form-element span{
   cursor: pointer;
 }
 
+footer.footer .newsletter .form-element span:hover{
+  background: var(--black);
+  color: var(--white);
+}
+
 footer.footer .follow .social i{color:var(--white);}
 
 
@@ -440,6 +459,10 @@ footer.footer .rights{
 }
 
 footer.footer .rights h4 a{color: var(--white);}
+
+footer.footer .rights h4 a:hover{
+  color: var(--dayLight)
+}
 
 footer.footer .move-up{
   position: absolute;
