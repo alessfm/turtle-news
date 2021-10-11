@@ -5,7 +5,7 @@ const responsive = {
   960:{items: 3},
 }
 
-// Uso de JQuery
+// a lot of JQuery below
 $(document).ready( _ => {
 
   // Dark and Light mode
@@ -19,12 +19,12 @@ $(document).ready( _ => {
   $nav = $('.nav');
   $toggleCollapse = $('.toggle-collapse');
 
-  // Fazer menu compresso para telas < 750px
+  // collapse menu when screen < 750px
   $toggleCollapse.click( _ => {
     $nav.toggleClass('collapse');
   });
   
-  // owl-carousel; iniciar e alterar 
+  // owl-carousel config
   $('.owl-carousel').owlCarousel({
     loop: true,
     autoplay: false,
@@ -35,7 +35,14 @@ $(document).ready( _ => {
     responsive: responsive
   });
 
-  // botão que envia para o topo
+  // go to the posts 
+  $('.site-background button').click( _ => {
+    $('html,body').animate({
+      scrollTop: $("#news").offset().top
+    },2000);
+  });
+
+  // go to page top
   $('.move-up span').click( _ => {
     $('html,body').animate({
       scrollTop: 0
