@@ -103,6 +103,21 @@ p{
   background: var(--day);
 }
 
+.dark-mode{
+  background: var(--dark-color);
+  background-color: var(--dark-color);
+  color: var(--dark-color);
+}
+
+.dark-color{
+  color: var(--nightLight);
+}
+
+.dark-accent{
+  background-color: var(--bg-color);
+}
+
+
 /*-- x--Global Classes--x --*/
 
 /*-- ---Navbar--- --*/
@@ -148,7 +163,6 @@ p{
   font-size: 1.1rem;
   position: relative;
   font-family: var(--reg_Mont);
-  font-size: 1.1rem;
 }
 
 
@@ -160,7 +174,7 @@ p{
   
 .switch:hover{
   cursor:pointer;
-  color: var(--dayLight);
+  color: var(--nightLight) !important;
 }
 
 .nav .nav-brand img{
@@ -478,20 +492,6 @@ footer.footer .move-up span:hover{
 }
 
 /*-- x--Footer--x --*/
-
-.dark-mode{
-  background: var(--dark-color);
-  background-color: var(--dark-color);
-  color: var(--dark-color);
-}
-
-.dark-color{
-  color:var(--nightLight);
-}
-
-.dark-accent{
-  background:var(--nightDark);
-}
 
 /*           Viewport less then or equal to 1130px           */
 @media only screen and (max-width: 1130px){
