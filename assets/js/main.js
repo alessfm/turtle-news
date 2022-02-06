@@ -8,20 +8,32 @@ const responsive = {
 // a lot of JQuery below
 $(document).ready( _ => {
 
+  $switch = $('.switch');
+  
+  $nav = $('.nav');
+  $toggleCollapse = $('.toggle-collapse');
+  
+  $logo = $('.logo');
+  $darkLogo = $('.dark-logo');
+
   // Dark and Light mode
-  $('.switch').click( _ => {
+  $switch.click( _ => {
     $('html,body').toggleClass('dark-mode');
     $('.blog').toggleClass('dark-mode');
     $('.owl-carousel').toggleClass('dark-mode');
     $('a').toggleClass('dark-color');
+    $('p').toggleClass('light-text');
   });
-
-  $nav = $('.nav');
-  $toggleCollapse = $('.toggle-collapse');
 
   // collapse menu when screen < 750px
   $toggleCollapse.click( _ => {
     $nav.toggleClass('collapse');
+  });
+
+  // change logo when dark-mode on
+  $switch.click( _ => {
+    $darkLogo.toggleClass('dark-logo-show');
+    $logo.toggleClass('logo-not-show');
   });
   
   // owl-carousel config

@@ -3,53 +3,46 @@
   <head>
     <!--Metas-->
     <meta charset="UTF-8"/>
-
     <meta name="viewport" 
-          content="width=device-width,
-          initial-scale=1.0"/>
+      content="width=device-width,
+      initial-scale=1.0"/>
 
     <title>Notícias Atrasadas | Turtle News</title>
 
     <meta name="description" 
-          content="Turtle News, um espaço para análises, 
-          notícias e  divulgação de conteúdos incríveis da 
-          área dos Games no Brasil e Mundo."/>
-
-    <meta name="keywords" 
-          content="Turtle,News,Análises,Notícias,
-          Conteúdos,Oficial,Games,Brasil,Mundo"/>
-
+      content="Turtle News, um espaço para análises, 
+      notícias e  divulgação de conteúdos incríveis da 
+      área dos Games no Brasil e Mundo."/>
+    <meta name="keywords"
+      content="Turtle,News,Análises,Notícias,
+      Conteúdos,Oficial,Games,Brasil,Mundo"/>
     <meta name="robots" 
-          content="index,follow"/>
-
+      content="index,follow"/>
     <meta name="author" 
-          content="Alessandro F. Malheiro"/>
+      content="Alessandro F. Malheiro"/>
     <!--x Metas x-->
 
     <!--Links-->
-
     <!--Reset CSS-->
     <link rel="stylesheet"
-          href="./assets/css/reset.css"/>
+      href="./assets/css/reset.css"/>
     <!--Icon-->
     <link rel="shortcut icon" 
-          href="./assets/img/logo.png"/>
+      href="./assets/img/logo.png"/>
     <!--Fonts-->
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Nunito:wght@300;400;700&display=swap"/>
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Nunito:wght@300;400;700&display=swap"/>
     <!--Style CSS-->
     <link rel="stylesheet" 
-          href="./assets/css/style.css"/>   
+      href="./assets/css/style.css"/>   
     <!--Carousel-->
     <link rel="stylesheet" 
-          href="./assets/css/owl.carousel.min.css"/>
-
+      href="./assets/css/owl.carousel.min.css"/>
     <link rel="stylesheet" 
-          href="./assets/css/owl.theme.default.min.css"/>
+      href="./assets/css/owl.theme.default.min.css"/>
     <!--AOS Library-->  
     <link rel="stylesheet" 
-          href="./assets/css/aos.css"/>
-    
+      href="./assets/css/aos.css"/>    
     <!--x Links x-->
   </head>
   <body>
@@ -61,7 +54,8 @@
           
           <div class="nav-brand">
             <a href="#">
-              <img src="./assets/img/logodark.png">
+              <img class="logo" src="./assets/img/logodark.png">
+              <img class="dark-logo" src="./assets/img/logo.png">
             </a>
           </div>
 
@@ -76,25 +70,23 @@
           <div>
             <ul class="nav-items">
               <li class="nav-link">
-                <a href="#" class="navItem">
-                  <i class="fas fa-home"></i>Home
+                <a aria-label="Hall de notícias" class="navItem">
+                  <i class="fas fa-home"></i>Início
                 </a>
               </li>
-
-              <li class="nav-link">
-                <a class="navItem switch">
-                  <i class="fas fa-moon"></i>Modo escuro
-                </a>
-              </li>
-
-            </ul>      
+            </ul>   
           </div>
-
+          
           <div class="social text-gray">
-            <a href="#"><i class="fab fa-gitlab"></i></a>
-            <a href="https://github.com/alessfm"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-discord"></i></a>
-            <a href="https://www.linkedin.com/in/alessandro-malheiro/"><i class="fab fa-linkedin"></i></a>
+            <a aria-label="Perfil do autor no GitHub" 
+            href="https://github.com/alessfm">
+              <i class="fab fa-github"></i></a>
+            <a aria-label="Perfil do autor no LinkedIn" 
+            href="https://www.linkedin.com/in/alessandro-malheiro/">
+              <i class="fab fa-linkedin"></i></a>
+            <a aria-label="Modo escuro" 
+            class="switch">
+              <i class="fas fa-adjust"></i></a>
           </div>
 
         </div>
@@ -191,7 +183,7 @@
       <section class="container">
         <div class="site-content">
           <div id="news" class="posts">
-
+            
             <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
               <div class="post-image">
                 <div>
@@ -488,11 +480,9 @@
           <h2>Siga-me</h2>
           <p>Veja o que o dev já fez</p>
           <div class="social text-gray">
-            <a href="#"><i class="fab fa-gitlab"></i></a>
-            <a href="https://github.com/alessfm">
+            <a aria-label="Perfil do autor no GitHub" href="https://github.com/alessfm">
               <i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-discord"></i></a>
-            <a href="https://www.linkedin.com/in/alessandro-malheiro/">
+            <a aria-label="Perfil do autor no LinkedIn" href="https://www.linkedin.com/in/alessandro-malheiro/">
               <i class="fab fa-linkedin"></i></a>
           </div>
         </div>
@@ -500,7 +490,7 @@
       </div>
 
       <div class="rights flex-row">
-        <h4>Copyright ©2021 Todos os Direitos Reservados | feito por
+        <h4>Copyright ©2021-2022 Todos os Direitos Reservados | feito por
           <a href="https://github.com/alessfm" target="_black">
             <i class="fab fa-github"></i>alessfm
           </a>
