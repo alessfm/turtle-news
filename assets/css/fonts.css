@@ -1,38 +1,31 @@
 /*----Nunito----*/
-
 /*--Light--*/
 @font-face{
   font-family: lev_Nuni;
   src: url(../fonts/Nunito/Nunito-Light.ttf);
 }
-
 /*--Regular--*/
 @font-face{
   font-family: reg_Nuni;
   src: url(../fonts/Nunito/Nunito-Regular.ttf);
 }
-
 /*--Bold--*/
 @font-face{
   font-family: bold_Nuni;
   src: url(../fonts/Nunito/Nunito-Bold.ttf);
 }
 
-
 /*----Montserrat----*/
-
 /*--Light--*/
 @font-face{
   font-family: lev_Mont;
   src: url(../fonts/Montserrat/Montserrat-Light.ttf);
 }
-
 /*--Regular--*/
 @font-face{
   font-family: reg_Mont;
   src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
 }
-
 /*--Bold--*/
 @font-face{
   font-family: bold_Mont;
